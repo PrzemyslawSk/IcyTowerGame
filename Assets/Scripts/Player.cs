@@ -10,11 +10,11 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject jumpingSpriteObject;
     [SerializeField] ParticleSystem particleSystem;
     [SerializeField] Transform raycastTransform;
-    public float maxSpeed = 10;
-    public float speed = 5;
-    public float jumpPower = 5;
-    public float moveJumpFactor = 5;
-    public bool jumping = false;
+    [SerializeField] float maxSpeed = 10;
+    [SerializeField] float speed = 5;
+    [SerializeField] float jumpPower = 5;
+    [SerializeField] float moveJumpFactor = 5;
+    [SerializeField] public bool jumping = false;
 
     private void Start() {
         jumpingSpriteObject.SetActive(false);
